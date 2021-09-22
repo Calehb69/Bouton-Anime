@@ -1,0 +1,41 @@
+* {
+  margin: 0;
+  padding: 0;
+  border: none;
+  outline: none;
+}
+
+body {
+  background: #efefef;
+  margin-top: 100px;
+}
+
+@keyframes animButton {
+  0% {
+    margin-top: 0;
+    box-shadow: 0 4px 4px #333;
+  }
+
+  100% {
+    margin-top: -6px;
+    box-shadow: 0 10px 10px #bbb;
+  }
+}
+
+input {
+  display: block;
+  margin: auto;
+  width: 300px;
+  height: 50px;
+  background: #3498db;
+  color: #fff;
+  font-size: 18px;
+  border-bottom: 5px solid #2980b9;
+  border-radius: 9px;
+  cursor: pointer;
+  animation: animButton 1s alternate linear infinite;
+}
+
+input:hover {
+  background: #3babf6;
+}
